@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-surface-card text-slate-900 dark:bg-surface-dark dark:text-slate-100;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(108, 92, 231, 0.35);
+  border-radius: 999px;
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-white/60 dark:bg-white/5 border border-white/40 dark:border-white/10;
+}
+
+.card-surface {
+  @apply bg-white dark:bg-surface-cardDark border border-surface-border dark:border-surface-borderDark rounded-2xl shadow-card dark:shadow-card-dark;
+}
